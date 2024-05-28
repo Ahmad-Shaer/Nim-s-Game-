@@ -6,6 +6,7 @@ the user can choose the diffuclty of the AI opponent (easy, medium, hard) which 
 
  some pictures from the application: 
 
-![image](https://github.com/Ahmad-Shaer/Nim-s-Game-/assets/54283555/002a52a0-9092-400d-b30d-6269241f4cb8)
+![image](https://github.com/Ahmad-Shaer/Nim-s-Game-/assets/54283555/13f5f491-039b-47be-bc2f-2944553c20d4)
+
 
 ![image](https://github.com/Ahmad-Shaer/Nim-s-Game-/assets/54283555/e7391d72-31ad-4d19-a3d6-85f0a3a111fb)
