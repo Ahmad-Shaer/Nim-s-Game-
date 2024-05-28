@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>21 Nim Game</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="game-container">
+
+
+  <div id="title-box">
+    <h1 id="game-title">21 Nim Game</h1>
+  </div>
+  <div id="configurations">
+    <div id="options">
+      <div class="match-options">
+
+        <h2>Number Of Matches</h2>
+
+        <form id="count-form">
+          <input type="radio" id="matches9"  value="9" checked name="matches-number">
+          <label for="matches9">9</label>
+
+
+          <input type="radio" id="matches16"  value="16" name="matches-number">
+          <label for="matches16">16</label>
+
+
+          <input type="radio" id="matches21" value="21" name="matches-number">
+          <label for="matches21">21</label>
+        </form>
+      </div>
+
+      <div class="difficulty-level">
+        <h2>Difficulty Level</h2>
+        <form id="difficulty">
+          <input type="radio" id="easyMode" checked name="mode" value="Easy">
+          <label for="easyMode">Easy</label>
+
+
+          <input type="radio" id="midMode" name="mode" value="Medium">
+          <label for="midMode">Medium</label>
+
+
+          <input type="radio" id="hardMode" name="mode" value="Hard">
+          <label for="hardMode">Hard</label>
+        </form>
+
+      </div>
+    </div>
+
+    <div id="count-box">
+      <h2>COUNT:</h2>
+      <h4 id="match-count">4</h4>
+      <button id="reset-btn" onclick="resetGame()" >Reset</button>
+    </div>
+
+    <div id="game-instructions">
+      <h2>Instructions</h2>
+      <ul>
+        <li>Start With Selected Number of Matches</li>
+        <li>Use the buttons to decrement the number of matches</li>
+        <li>You will win your opponent has only one match.</li>
+      </ul>
+    </div>
+  </div>
+  <div id="matches-box">
+
+  </div>
+
+</div>
+
+<div id="notification-box">
+</div>
+
+<div id="control-buttons">
+  <button id="sub1"  onclick="subtractMatches(1)">Subtract 1</button>
+  <button id="sub2"  onclick="subtractMatches(2)">Subtract 2</button>
+  <button id="sub3"  onclick="subtractMatches(3)">Subtract 3</button>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>

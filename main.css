@@ -1,0 +1,165 @@
+body {
+    background-image: url("src/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#title-box {
+    background-color: rgba(103,47,38, .5);
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    border-radius: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 16px hsla(10, 50%, 7%, 0.8);
+}
+
+#game-title {
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#matches-box {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    bottom: 20%;
+}
+
+#matches-box img{
+    object-fit: cover;
+    max-width: 4vw;
+    max-height: 4vw;
+
+    /*background-color: red;*/
+}
+#matches-box:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-image: url("src/wood.webp");
+}
+
+#control-buttons {
+    position: absolute;
+    bottom: 5%;
+    width: 50%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+}
+
+#control-buttons button , #reset-btn {
+    color: white;
+    background-color: rgba(103,47,38, .5);
+    box-shadow: 2px 0 16px hsla(10, 50%, 7%, 0.8);
+
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 1.5em;
+    margin-right: 5vw;
+}
+#reset-btn {
+    margin: 0 auto;
+    display: none;
+}
+#control-buttons button[disabled] {
+    color: grey;
+    background-color: rgba(103,47,38, .3);
+    opacity: 0.5;
+
+}
+#configurations {
+    display: flex;
+    justify-content: center;
+
+}
+
+#options, #count-box, #game-instructions {
+    background-color: rgba(103,47,38, .5);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    width: 20%;
+
+}
+#options {
+    margin-right: 2%;
+}
+#count-box {
+    margin-right: 2%;
+}
+
+#match-count {
+    font-size: 32px;
+}
+
+#game-instructions {
+    padding: 20px;
+}
+
+#notification-box {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    width: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#notification-box span{
+    background-color: rgba(103,47,38, .4);
+    flex: 100%;
+    color: white;
+    padding: 6px;
+    border-left: 2px solid cyan;
+
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    height: 3vh;
+    white-space: nowrap;
+    word-break: keep-all;
+    transition: 0.5s;
+
+
+}
+
+.showNotification {
+    animation-name: notification-animation;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.hideNotification {
+    animation-name: notification-animation;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes notification-animation {
+    0% {
+        background-color: rgba(103,47,38, 1);
+        margin-left: 90%;
+        opacity: 0;
+
+
+    }
+    100%{
+        margin-left: 0;
+    }
+
+}
+
